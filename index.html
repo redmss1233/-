@@ -1,0 +1,1182 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الإخوة طورش للأثاث - أرقى غرف النوم والصالونات في أدرار</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Cairo & Tajawal -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        tourche: {
+                            50: '#fffbeb',
+                            100: '#fef3c7',
+                            500: '#d97706',
+                            600: '#b45309',
+                            700: '#92400e',
+                            800: '#78350f',
+                            900: '#451a03',
+                        },
+                        adrarDark: '#0f172a',
+                        luxuryGold: '#d4af37',
+                        luxuryGoldHover: '#b89628'
+                    },
+                    fontFamily: {
+                        cairo: ['Cairo', 'sans-serif'],
+                        tajawal: ['Tajawal', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Cairo', 'Tajawal', sans-serif;
+            background-color: #f8fafc;
+        }
+        .wood-gradient {
+            background: linear-gradient(135deg, #b45309 0%, #78350f 50%, #451a03 100%);
+        }
+        .gold-gradient {
+            background: linear-gradient(135deg, #f59e0b 0%, #d97706 50%, #92400e 100%);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+        }
+        .luxury-card {
+            transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .luxury-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 30px -5px rgba(0, 0, 0, 0.12), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #d97706;
+            border-radius: 9999px;
+        }
+        .pulse-emerald {
+            animation: pulse-emerald 2s infinite;
+        }
+        @keyframes pulse-emerald {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7); }
+            50% { box-shadow: 0 0 0 15px rgba(16, 185, 129, 0); }
+        }
+    </style>
+</head>
+<body class="text-slate-800 bg-slate-50 antialiased selection:bg-amber-600 selection:text-white">
+
+    <!-- Floating Action Buttons -->
+    <div class="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
+        <!-- WhatsApp Floating Button -->
+        <a href="https://wa.me/213673907859?text=%D1%81%D0%BB%D0%B0%D0%BC%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%8A%20%D8%A3%D8%AB%D8%A7%D8%AB%20%D8%A7%D9%84%D8%A5%D8%AE%D9%88%D8%A9%20%D8%B7%D9%88%D8%B1%D8%B4%20%D8%A8%D8%A3%D8%AF%D8%B1%D8%A7%D8%B1" 
+           target="_blank" rel="noopener noreferrer" 
+           class="bg-emerald-600 hover:bg-emerald-700 text-white p-4 rounded-full shadow-2xl flex items-center justify-center transition-all duration-300 hover:scale-110 group relative pulse-emerald" 
+           title="تحدث معنا على الواتساب">
+            <i class="fab fa-whatsapp text-2xl"></i>
+            <span class="absolute right-16 bg-slate-900 text-white text-xs px-3 py-1.5 rounded-lg whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity shadow-lg">تواصل مباشر واتساب</span>
+        </a>
+
+        <!-- Phone Call Floating Button -->
+        <a href="tel:0673907859" 
+           class="bg-amber-600 hover:bg-amber-700 text-white p-4 rounded-full shadow-2xl flex items-center justify-center transition-all duration-300 hover:scale-110 group relative" 
+           title="اتصل بنا الآن">
+            <i class="fas fa-phone-alt text-xl"></i>
+            <span class="absolute right-16 bg-slate-900 text-white text-xs px-3 py-1.5 rounded-lg whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity shadow-lg">0673 90 78 59</span>
+        </a>
+    </div>
+
+    <!-- Announcement Bar -->
+    <div class="bg-slate-900 text-amber-400 text-xs md:text-sm py-2 px-4 text-center font-semibold border-b border-amber-500/20">
+        <div class="max-w-7xl mx-auto flex justify-between items-center px-2">
+            <div class="flex items-center gap-2 mx-auto sm:mx-0">
+                <span class="bg-amber-500 text-slate-950 text-[10px] font-extrabold px-2 py-0.5 rounded-full uppercase tracking-wider">حي الحطابة - أدرار</span>
+                <span>خدمة مفتوحة 24/24 ساعة وحجم توصيل خاص لجميع أحياء أدرار والولايات المجاورة!</span>
+            </div>
+            <div class="hidden sm:flex items-center gap-6 text-slate-300">
+                <span><i class="fas fa-clock text-amber-400 ml-1"></i> مفتوح 24/24 ساعة</span>
+                <span><i class="fas fa-phone text-amber-400 ml-1"></i> 0673 90 78 59</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- Brand Logo -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="w-12 h-12 wood-gradient rounded-xl flex items-center justify-center text-white shadow-md shadow-amber-900/20 group-hover:rotate-6 transition-transform">
+                        <i class="fas fa-couch text-2xl text-amber-300"></i>
+                    </div>
+                    <div>
+                        <span class="text-2xl font-black text-slate-900 tracking-tight block leading-tight">الإخوة طورش للأثاث</span>
+                        <span class="text-xs text-amber-700 font-bold tracking-wider block">حي الحطابة - أدرار (Tourche Furniture)</span>
+                    </div>
+                </a>
+
+                <!-- Navigation Links -->
+                <nav class="hidden lg:flex items-center gap-6 font-bold text-slate-700 text-sm">
+                    <a href="#hero" class="hover:text-amber-700 transition-colors py-2 border-b-2 border-transparent hover:border-amber-700">الرئيسية</a>
+                    <a href="#catalog" class="hover:text-amber-700 transition-colors py-2 border-b-2 border-transparent hover:border-amber-700">معرض الأثاث</a>
+                    <a href="#customizer" class="hover:text-amber-700 transition-colors py-2 border-b-2 border-transparent hover:border-amber-700">مخصص الألوان</a>
+                    <a href="#features" class="hover:text-amber-700 transition-colors py-2 border-b-2 border-transparent hover:border-amber-700">مميزاتنا</a>
+                    <a href="#offers" class="hover:text-amber-700 transition-colors py-2 border-b-2 border-transparent hover:border-amber-700">العروض</a>
+                    <a href="#calculator" class="hover:text-amber-700 transition-colors py-2 border-b-2 border-transparent hover:border-amber-700">الحاسبة</a>
+                    <a href="#reviews" class="hover:text-amber-700 transition-colors py-2 border-b-2 border-transparent hover:border-amber-700">التقييمات</a>
+                    <a href="#faq" class="hover:text-amber-700 transition-colors py-2 border-b-2 border-transparent hover:border-amber-700">الأسئلة الشائعة</a>
+                    <a href="#contact" class="hover:text-amber-700 transition-colors py-2 border-b-2 border-transparent hover:border-amber-700">تواصل معنا</a>
+                </nav>
+
+                <!-- Header Call Button -->
+                <div class="hidden sm:flex items-center gap-3">
+                    <a href="tel:0673907859" class="gold-gradient hover:opacity-95 text-white font-extrabold px-5 py-2.5 rounded-xl shadow-lg shadow-amber-600/20 flex items-center gap-2 transition-all transform hover:-translate-y-0.5">
+                        <i class="fas fa-phone-alt text-sm"></i>
+                        <span>0673 90 78 59</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Navigation Menu Toggle Button -->
+                <button id="mobileMenuBtn" class="lg:hidden text-slate-800 hover:text-amber-700 text-2xl p-2 focus:outline-none" aria-label="قائمة التصفح">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-slate-200 px-6 pt-2 pb-6 space-y-3">
+            <a href="#hero" class="block py-2 text-slate-800 font-bold hover:text-amber-700 border-b border-slate-50">الرئيسية</a>
+            <a href="#catalog" class="block py-2 text-slate-800 font-bold hover:text-amber-700 border-b border-slate-50">معرض الأثاث</a>
+            <a href="#customizer" class="block py-2 text-slate-800 font-bold hover:text-amber-700 border-b border-slate-50">مخصص الألوان والتفصيل</a>
+            <a href="#features" class="block py-2 text-slate-800 font-bold hover:text-amber-700 border-b border-slate-50">مميزاتنا</a>
+            <a href="#offers" class="block py-2 text-slate-800 font-bold hover:text-amber-700 border-b border-slate-50">العروض والباكجات</a>
+            <a href="#calculator" class="block py-2 text-slate-800 font-bold hover:text-amber-700 border-b border-slate-50">حاسبة التكلفة والتخفيض</a>
+            <a href="#reviews" class="block py-2 text-slate-800 font-bold hover:text-amber-700 border-b border-slate-50">تقييمات العملاء</a>
+            <a href="#faq" class="block py-2 text-slate-800 font-bold hover:text-amber-700 border-b border-slate-50">الأسئلة الشائعة</a>
+            <a href="#contact" class="block py-2 text-slate-800 font-bold hover:text-amber-700">موقعنا والتواصل</a>
+            <div class="pt-3 flex flex-col gap-2">
+                <a href="tel:0673907859" class="w-full text-center gold-gradient text-white font-bold py-3 rounded-xl shadow flex items-center justify-center gap-2">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>اتصال بـ 0673 90 78 59</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Banner Section -->
+    <section id="hero" class="relative bg-slate-900 text-white overflow-hidden py-16 lg:py-24">
+        <!-- Background Overlay Image -->
+        <div class="absolute inset-0 z-0 opacity-25 bg-center bg-cover" style="background-image: url('https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=1600&auto=format&fit=crop');"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/90 to-slate-900/70 z-0"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Hero Left Content Text -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-right">
+                    
+                    <div class="inline-flex items-center gap-2 bg-amber-500/20 border border-amber-500/40 px-4 py-1.5 rounded-full backdrop-blur-sm">
+                        <span class="w-2.5 h-2.5 rounded-full bg-amber-400 animate-pulse"></span>
+                        <span class="text-amber-300 font-bold text-xs sm:text-sm">المعرض الأقوى في أدرار - حي الحطابة</span>
+                    </div>
+
+                    <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight text-white leading-tight">
+                        فخامة وراحة أثاث منزلك مع <span class="text-amber-400 inline-block">الإخوة طورش</span>
+                    </h1>
+
+                    <p class="text-slate-300 text-base sm:text-lg max-w-2xl leading-relaxed mx-auto lg:mx-0">
+                        تعديل وتفصيل وتوفير أرقى غرف النوم الشاهقة، أطقم الصالونات المودرن والكلاسيك، الأفرشة والأسرة الطبية، بأسعار جد مناسبة وخدمة 24/24 ساعة بحي الحطابة بأدرار.
+                    </p>
+
+                    <div class="pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                        <a href="https://wa.me/213673907859?text=%D1%81%D0%BB%D0%B0%D0%BC%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%A3%D8%AB%D8%A7%D8%AB%20%D8%A7%D9%84%D8%A5%D8%AE%D9%88%D8%A9%20%D8%B7%D9%88%D8%B1%D8%B4%20%D8%A8%D8%A3%D8%AF%D8%B1%D8%A7%D8%B1" 
+                           target="_blank" 
+                           class="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold px-8 py-4 rounded-xl shadow-xl flex items-center justify-center gap-3 transition-all transform hover:-translate-y-0.5">
+                            <i class="fab fa-whatsapp text-2xl"></i>
+                            <span>تواصل معنا مباشرة عبر الواتساب</span>
+                        </a>
+
+                        <a href="#catalog" 
+                           class="w-full sm:w-auto bg-slate-800 hover:bg-slate-700 text-amber-300 border border-slate-700 font-extrabold px-8 py-4 rounded-xl shadow-lg flex items-center justify-center gap-2 transition-all">
+                            <i class="fas fa-couch"></i>
+                            <span>استكشف المعرض الآن</span>
+                        </a>
+                    </div>
+
+                    <!-- Trust Badges -->
+                    <div class="pt-6 border-t border-slate-800 grid grid-cols-3 gap-4 text-center max-w-xl mx-auto lg:mx-0">
+                        <div>
+                            <span class="text-xl sm:text-2xl font-black text-amber-400 block">+1500</span>
+                            <span class="text-xs text-slate-400 font-semibold">منزل مجهز بأدرار</span>
+                        </div>
+                        <div>
+                            <span class="text-xl sm:text-2xl font-black text-amber-400 block">24h / 24h</span>
+                            <span class="text-xs text-slate-400 font-semibold">استقبال وتواصل دائم</span>
+                        </div>
+                        <div>
+                            <span class="text-xl sm:text-2xl font-black text-amber-400 block">100%</span>
+                            <span class="text-xs text-slate-400 font-semibold">رضا وجودة مضمونة</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Hero Right Card Highlight -->
+                <div class="lg:col-span-5">
+                    <div class="relative bg-slate-800/80 p-3 rounded-3xl border border-slate-700 shadow-2xl backdrop-blur-md">
+                        <img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?q=80&w=1000&auto=format&fit=crop" 
+                             alt="أثاث الإخوة طورش بأدرار" 
+                             class="rounded-2xl w-full h-80 sm:h-96 object-cover"
+                             onerror="this.onerror=null; this.src='https://placehold.co/800x600/1e293b/ffffff?text=%D8%A3%D8%AB%D8%A7%D8%AB+%D8%A7%D9%84%D8%A5%D8%AE%D9%88%D8%A9+%D8%B7%D9%88%D8%B1%D8%B4';">
+                        
+                        <div class="absolute bottom-6 right-6 left-6 bg-slate-950/90 backdrop-blur border border-amber-500/30 p-4 rounded-2xl text-white shadow-xl flex items-center justify-between">
+                            <div>
+                                <span class="text-amber-400 text-xs font-black block">تشكيلة العرائس والغرف الشاهقة</span>
+                                <span class="text-sm font-extrabold text-white block mt-0.5">حي الحطابة - أدرار</span>
+                            </div>
+                            <a href="tel:0673907859" class="bg-amber-600 hover:bg-amber-700 text-white font-bold p-3 rounded-xl transition-all">
+                                <i class="fas fa-phone-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature Highlights Section -->
+    <section id="features" class="py-12 bg-white border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                
+                <div class="p-5 rounded-2xl bg-slate-50 border border-slate-100 flex flex-col items-center hover:border-amber-200 transition-colors">
+                    <div class="w-14 h-14 rounded-2xl wood-gradient text-amber-300 flex items-center justify-center text-2xl mb-3 shadow-md">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3 class="font-extrabold text-slate-900 text-base mb-1">خدمة 24/24 ساعة</h3>
+                    <p class="text-xs text-slate-500">نستقبل طلباتكم واستفساراتكم في كل الأوقات</p>
+                </div>
+
+                <div class="p-5 rounded-2xl bg-slate-50 border border-slate-100 flex flex-col items-center hover:border-amber-200 transition-colors">
+                    <div class="w-14 h-14 rounded-2xl wood-gradient text-amber-300 flex items-center justify-center text-2xl mb-3 shadow-md">
+                        <i class="fas fa-tags"></i>
+                    </div>
+                    <h3 class="font-extrabold text-slate-900 text-base mb-1">أسعار جد مناسبة</h3>
+                    <p class="text-xs text-slate-500">تحطيم الأسعار وعروض تناسب كل ميزانية</p>
+                </div>
+
+                <div class="p-5 rounded-2xl bg-slate-50 border border-slate-100 flex flex-col items-center hover:border-amber-200 transition-colors">
+                    <div class="w-14 h-14 rounded-2xl wood-gradient text-amber-300 flex items-center justify-center text-2xl mb-3 shadow-md">
+                        <i class="fas fa-truck-loading"></i>
+                    </div>
+                    <h3 class="font-extrabold text-slate-900 text-base mb-1">خدمة التوصيل والتركيب</h3>
+                    <p class="text-xs text-slate-500">توصيل آمن وسريع إلى باب منزلكم بأدرار</p>
+                </div>
+
+                <div class="p-5 rounded-2xl bg-slate-50 border border-slate-100 flex flex-col items-center hover:border-amber-200 transition-colors">
+                    <div class="w-14 h-14 rounded-2xl wood-gradient text-amber-300 flex items-center justify-center text-2xl mb-3 shadow-md">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="font-extrabold text-slate-900 text-base mb-1">جودة ومتانة ممتازة</h3>
+                    <p class="text-xs text-slate-500">أخشاب معالجة ومواد مقاومة للحرارة الصحراوية</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Furniture Color Customizer Section -->
+    <section id="customizer" class="py-16 bg-slate-900 text-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-amber-400 font-extrabold text-sm uppercase tracking-wider">تجربة تفاعلية حية</span>
+                <h2 class="text-3xl sm:text-4xl font-black mt-2">جرب لون أثاثك المفضل قبل الشراء</h2>
+                <div class="w-20 h-1 gold-gradient mx-auto mt-3 rounded-full"></div>
+                <p class="text-slate-300 text-sm mt-3">
+                    اختبر تناسق الألوان والمواد لقماش صالونك أو غرفة نومك واطلب التوديع والتفصيل حسب ذوقك المفضل مع خدمة الإخوة طورش بأدرار
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-12 gap-10 items-center">
+                <!-- Color Selector Controls -->
+                <div class="lg:col-span-5 bg-slate-800/80 backdrop-blur p-6 sm:p-8 rounded-3xl border border-slate-700 shadow-xl space-y-6">
+                    <div>
+                        <label class="block text-xs font-bold text-amber-400 uppercase tracking-wider mb-2">1. اختر نوع قطعة الأثاث:</label>
+                        <select id="customPiece" onchange="updateCustomizerPreview()" class="w-full bg-slate-900 text-white p-3.5 rounded-xl border border-slate-700 text-sm font-bold focus:ring-2 focus:ring-amber-500 outline-none">
+                            <option value="sofa">طقم صالون عصري L</option>
+                            <option value="bedroom">غرفة نوم مودرن ملكية</option>
+                            <option value="chairs">طقم كراسي وطاولة طعام</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-bold text-amber-400 uppercase tracking-wider mb-2">2. اختر لون القماش والخشب:</label>
+                        <div class="grid grid-cols-5 gap-3" id="colorPaletteBtns">
+                            <button onclick="selectCustomColor('#d97706', 'خشب جوزي مع قماش ذهبي ملكي')" class="h-12 rounded-xl border-2 border-white bg-amber-600 focus:scale-110 transition-transform shadow" title="ذهبي دافئ"></button>
+                            <button onclick="selectCustomColor('#475569', 'رمادي رمادي مودرن أنيق')" class="h-12 rounded-xl border-2 border-transparent hover:border-white bg-slate-600 focus:scale-110 transition-transform shadow" title="رمادي هادئ"></button>
+                            <button onclick="selectCustomColor('#065f46', 'أخضر زمردي ملكي فاخر')" class="h-12 rounded-xl border-2 border-transparent hover:border-white bg-emerald-800 focus:scale-110 transition-transform shadow" title="أخضر زمردي"></button>
+                            <button onclick="selectCustomColor('#1e3a8a', 'أزرق كحلي فخم')" class="h-12 rounded-xl border-2 border-transparent hover:border-white bg-blue-900 focus:scale-110 transition-transform shadow" title="أزرق كحلي"></button>
+                            <button onclick="selectCustomColor('#78350f', 'بني كلاسيكي خشبي أصيل')" class="h-12 rounded-xl border-2 border-transparent hover:border-white bg-amber-900 focus:scale-110 transition-transform shadow" title="بني خشبي"></button>
+                        </div>
+                    </div>
+
+                    <div class="p-4 bg-slate-900/90 rounded-2xl border border-slate-700/60">
+                        <span class="text-xs text-slate-400 block font-bold">النمط والتجهيز المختار:</span>
+                        <span id="customColorName" class="text-amber-400 font-extrabold text-sm block mt-1">خشب جوزي مع قماش ذهبي ملكي</span>
+                    </div>
+
+                    <button onclick="sendCustomizerOrder()" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold py-4 rounded-xl shadow-lg flex items-center justify-center gap-3 transition-all">
+                        <i class="fab fa-whatsapp text-2xl"></i>
+                        <span>طلب تفصيل هذا اللون عبر الواتساب</span>
+                    </button>
+                </div>
+
+                <!-- Preview Display Visualizer -->
+                <div class="lg:col-span-7">
+                    <div class="relative rounded-3xl overflow-hidden border border-slate-700 shadow-2xl bg-slate-950 p-4 text-center">
+                        <div id="previewColorBox" class="w-full h-80 sm:h-96 rounded-2xl flex items-center justify-center transition-all duration-500 relative overflow-hidden" style="background-color: #d97706;">
+                            <div class="absolute inset-0 bg-black/30 backdrop-blur-[1px]"></div>
+                            <div class="relative z-10 p-6 max-w-md bg-slate-950/80 rounded-2xl border border-white/10 text-white shadow-2xl">
+                                <i id="previewIcon" class="fas fa-couch text-6xl text-amber-400 mb-4 block"></i>
+                                <h3 id="previewTitle" class="text-2xl font-black mb-2">طقم صالون عصري L</h3>
+                                <p class="text-xs text-slate-300">معالجة ممتازة لمقاومة الغبار والحرارة في مناخ أدرار وتمنراست</p>
+                                <div class="mt-4 inline-block bg-amber-500 text-slate-950 font-black text-xs px-4 py-1.5 rounded-full">
+                                    تجهيز حسب الطلب - الإخوة طورش
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Furniture Catalog Section -->
+    <section id="catalog" class="py-16 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Section Title -->
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-amber-700 font-extrabold text-sm tracking-widest uppercase">معرض الإخوة طورش بأدرار</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-slate-900 mt-2">تشكيلة الأثاث المميزة</h2>
+                <div class="w-24 h-1.5 gold-gradient mx-auto mt-4 rounded-full"></div>
+                <p class="text-slate-600 mt-3 text-sm sm:text-base">
+                    اختر الموديل الأنسب لمنزلك واضغط على زر الطلب لإرسال استفسارك مباشرة عبر الواتساب أو اتصال هاتفي
+                </p>
+            </div>
+
+            <!-- Search and Filter Bar -->
+            <div class="bg-white p-4 rounded-2xl shadow-sm border border-slate-200 mb-8 flex flex-col lg:flex-row gap-4 justify-between items-center">
+                
+                <!-- Category Filter Buttons -->
+                <div class="flex flex-wrap gap-2 w-full lg:w-auto justify-center" id="categoryFilters">
+                    <button data-category="all" class="filter-btn active px-4 py-2.5 rounded-xl text-xs sm:text-sm font-extrabold bg-amber-700 text-white shadow transition-all">الكل</button>
+                    <button data-category="bedrooms" class="filter-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-extrabold bg-slate-100 text-slate-700 hover:bg-amber-100 hover:text-amber-800 transition-all">غرف النوم</button>
+                    <button data-category="salons" class="filter-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-extrabold bg-slate-100 text-slate-700 hover:bg-amber-100 hover:text-amber-800 transition-all">الصالونات والأرائك</button>
+                    <button data-category="mattresses" class="filter-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-extrabold bg-slate-100 text-slate-700 hover:bg-amber-100 hover:text-amber-800 transition-all">الأفرشة والأسرة</button>
+                    <button data-category="tables" class="filter-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-extrabold bg-slate-100 text-slate-700 hover:bg-amber-100 hover:text-amber-800 transition-all">الطاولات والإكسسوارات</button>
+                </div>
+
+                <!-- Search Input -->
+                <div class="relative w-full lg:w-80">
+                    <input type="text" id="searchInput" placeholder="ابحث عن غرفة نوم، سرير، صالون..." class="w-full pl-10 pr-4 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-amber-600 text-sm">
+                    <i class="fas fa-search absolute left-3 top-3.5 text-slate-400"></i>
+                </div>
+
+            </div>
+
+            <!-- Products Grid Dynamic -->
+            <div id="productsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Javascript will inject products here -->
+            </div>
+
+            <!-- Empty Search Fallback -->
+            <div id="noResults" class="hidden text-center py-16">
+                <i class="fas fa-couch text-6xl text-slate-300 mb-4"></i>
+                <h3 class="text-2xl font-bold text-slate-700">لم نجد أثاث مطبق لعملية البحث</h3>
+                <p class="text-slate-500 text-sm mt-1">تأكد من كتابة الكلمات بشكل صحيح أو اتصل بنا مباشرة للاستفسار عن أي موديل خاص</p>
+                <a href="tel:0673907859" class="inline-block mt-4 gold-gradient text-white font-bold px-6 py-2.5 rounded-xl shadow">
+                    اتصل بنا: 0673 90 78 59
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Special Bundles Section -->
+    <section id="offers" class="py-16 wood-gradient text-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-black/20"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                
+                <div class="space-y-6 text-center lg:text-right">
+                    <span class="inline-block bg-amber-400 text-slate-950 font-black text-xs px-4 py-1.5 rounded-full shadow-lg">
+                        ✨ عروض وتخفيضات خاصة بأهل أدرار
+                    </span>
+                    <h2 class="text-3xl sm:text-5xl font-black leading-tight">
+                        باكج تجهيز العروس والبيت السعيد بأفضل سعر في أدرار!
+                    </h2>
+                    <p class="text-amber-100 text-base sm:text-lg leading-relaxed">
+                        احصل على (غرفة نوم كاملة متينة + فرشة طبية فاخرة + طقم صالون مودرن) بسعر إجمالي محطم للأسعار مع أولوية التوصيل والتركيب في حي الحطابة وباقي أحياء أدرار.
+                    </p>
+                    
+                    <div class="grid grid-cols-3 gap-4 pt-2">
+                        <div class="bg-white/10 backdrop-blur border border-white/20 p-3 rounded-xl text-center">
+                            <span class="text-2xl font-black text-amber-300 block">100%</span>
+                            <span class="text-xs text-amber-100">خشب متين ممتازة</span>
+                        </div>
+                        <div class="bg-white/10 backdrop-blur border border-white/20 p-3 rounded-xl text-center">
+                            <span class="text-2xl font-black text-amber-300 block">24/24</span>
+                            <span class="text-xs text-amber-100">تواصل دائم</span>
+                        </div>
+                        <div class="bg-white/10 backdrop-blur border border-white/20 p-3 rounded-xl text-center">
+                            <span class="text-2xl font-black text-amber-300 block">مجاناً</span>
+                            <span class="text-xs text-amber-100">استشارة الاختيار</span>
+                        </div>
+                    </div>
+
+                    <div class="pt-4">
+                        <a href="https://wa.me/213673907859?text=%D1%81%D0%BB%D0%B0%D0%BC%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%B9%D8%B1%D8%B6%20%D8%A8%D8%A7%D9%83%D8%AC%20%D8%AA%D8%AC%D9%87%D9%8A%D8%B2%20%D8%A7%D9%84%D8%B9%D8%B1%D9%88%D8%B3%20%D8%B7%D9%88%D8%B1%D8%B4" 
+                           target="_blank" 
+                           class="inline-flex items-center gap-3 bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold px-8 py-4 rounded-xl shadow-xl transition-all transform hover:scale-105">
+                            <i class="fab fa-whatsapp text-2xl"></i>
+                            <span>احجز العرض واستفسر الآن</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <div class="bg-white/10 backdrop-blur-md p-4 rounded-3xl border border-white/20 shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?q=80&w=1000&auto=format&fit=crop" 
+                             alt="عرض أثاث الإخوة طورش" 
+                             class="rounded-2xl w-full h-80 sm:h-96 object-cover"
+                             onerror="this.onerror=null; this.src='https://placehold.co/800x600/1e293b/ffffff?text=%D8%B9%D8%B1%D8%B6+%D8%AE%D8%A7%D8%B5+%D8%A3%D8%AB%D8%A7%D8%AB+%D8%B7%D9%88%D8%B1%D8%B4';">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Budget Estimator Section -->
+    <section id="calculator" class="py-16 bg-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-10">
+                <span class="text-amber-700 font-extrabold text-sm">حاسبة التكلفة التقديرية</span>
+                <h2 class="text-3xl font-black text-slate-900 mt-1">احسب سعر أثاث منزلك واحصل على الخصم</h2>
+                <p class="text-slate-600 text-sm mt-2">حدد الخيارات المطلوبة واضغط إرسال للحصول على السعر النهائي وخصم خاص من الإخوة طورش بأدرار!</p>
+            </div>
+
+            <div class="bg-slate-50 rounded-3xl p-6 sm:p-10 border border-slate-200 shadow-sm">
+                <form id="calcForm" onsubmit="event.preventDefault();" class="space-y-6">
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        
+                        <!-- Bedroom Choice -->
+                        <div class="space-y-2">
+                            <label class="block text-sm font-extrabold text-slate-800">اختيار غرفة النوم:</label>
+                            <select id="calcBedroom" class="w-full bg-white p-3.5 rounded-xl border border-slate-300 text-sm font-medium focus:ring-2 focus:ring-amber-600 outline-none">
+                                <option value="0">بدون غرفة نوم</option>
+                                <option value="115000">غرفة نوم اقتصادية متكاملة (115,000 دج)</option>
+                                <option value="175000" selected>غرفة نوم مودرن لوكس (175,000 دج)</option>
+                                <option value="250000">غرفة نوم ملكية خشب ممتازة (250,000 دج)</option>
+                            </select>
+                        </div>
+
+                        <!-- Mattress Choice -->
+                        <div class="space-y-2">
+                            <label class="block text-sm font-bold text-slate-800">الأفرشة والأسرة الطبية:</label>
+                            <select id="calcMattress" class="w-full bg-white p-3.5 rounded-xl border border-slate-300 text-sm font-medium focus:ring-2 focus:ring-amber-600 outline-none">
+                                <option value="0">بدون فرشة</option>
+                                <option value="16000">فرشة أطفال / فردية طبية (16,000 دج)</option>
+                                <option value="30000" selected>فرشة طبية لشخصين عالية الراحة (30,000 دج)</option>
+                                <option value="45000">فرشة طبية ملكية بذاكرة إسفنجية (45,000 دج)</option>
+                            </select>
+                        </div>
+
+                        <!-- Salon / Sofa Choice -->
+                        <div class="space-y-2">
+                            <label class="block text-sm font-bold text-slate-800">الصالون والأريكة:</label>
+                            <select id="calcSofa" class="w-full bg-white p-3.5 rounded-xl border border-slate-300 text-sm font-medium focus:ring-2 focus:ring-amber-600 outline-none">
+                                <option value="0">بدون صالون</option>
+                                <option value="42000">أريكة L مودرن (42,000 دج)</option>
+                                <option value="80000" selected>صالون كامل 7 مقاعد قماش ممتاز (80,000 دج)</option>
+                                <option value="125000">صالون فخم ملكي كلاسيك (125,000 دج)</option>
+                            </select>
+                        </div>
+
+                        <!-- Tables & Accessories -->
+                        <div class="space-y-2">
+                            <label class="block text-sm font-bold text-slate-800">طاولات وإكسسوارات إضافية:</label>
+                            <select id="calcTable" class="w-full bg-white p-3.5 rounded-xl border border-slate-300 text-sm font-medium focus:ring-2 focus:ring-amber-600 outline-none">
+                                <option value="0">بدون إكسسوارات</option>
+                                <option value="12000" selected>طاولة قهوة ومرايا ديكور (12,000 دج)</option>
+                                <option value="25000">طقم طاولات ضيافة كاملة (25,000 دج)</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <!-- Delivery Checkbox & Total Display -->
+                    <div class="pt-6 border-t border-slate-200 flex flex-col sm:flex-row justify-between items-center gap-4">
+                        <label class="flex items-center gap-3 text-slate-800 font-bold cursor-pointer">
+                            <input type="checkbox" id="calcDelivery" class="w-5 h-5 text-amber-600 rounded focus:ring-amber-500" checked>
+                            <span>توصيل وتركيب بداخل ولاية أدرار (+ 3,000 دج)</span>
+                        </label>
+
+                        <div class="text-center sm:text-left bg-amber-50 px-6 py-3 rounded-2xl border border-amber-200 w-full sm:w-auto">
+                            <span class="text-xs text-amber-800 font-extrabold block">التكلفة التقديرية الإجمالية:</span>
+                            <span id="calcTotalDisplay" class="text-3xl font-black text-amber-800">300,000 دج</span>
+                        </div>
+                    </div>
+
+                    <!-- Submit Calculated List to WhatsApp Button -->
+                    <div class="text-center pt-2">
+                        <button type="button" onclick="sendCalculatedQuote()" class="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold px-8 py-4 rounded-xl shadow-lg flex items-center justify-center gap-3 mx-auto transition-all text-base">
+                            <i class="fab fa-whatsapp text-2xl"></i>
+                            <span>إرسال القائمة المحددة للواتساب وتلقي الخصم</span>
+                        </button>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Customer Reviews Section -->
+    <section id="reviews" class="py-16 bg-slate-50 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="flex flex-col md:flex-row justify-between items-center mb-12 gap-4 text-center md:text-right">
+                <div>
+                    <span class="text-amber-700 font-extrabold text-sm uppercase">آراء زبائننا الكرام</span>
+                    <h2 class="text-3xl sm:text-4xl font-black text-slate-900 mt-1">ماذا يقول أهالي أدرار عنا؟</h2>
+                </div>
+                <button onclick="openReviewModal()" class="gold-gradient text-white font-bold px-6 py-3 rounded-xl shadow flex items-center gap-2 hover:opacity-95 transition-all">
+                    <i class="fas fa-pen"></i>
+                    <span>أضف تقييمك الخاص</span>
+                </button>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                
+                <div class="bg-white p-6 rounded-3xl border border-slate-200 shadow-sm space-y-4">
+                    <div class="flex items-center gap-1 text-amber-500 text-sm">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-slate-600 text-sm leading-relaxed">"ما شاء الله تعامل راقي جداً أثاث متين وجودة الخشب ممتازة، تم التوصيل والتركيب في حي الحطابة في الموعد المُنظم."</p>
+                    <div class="flex items-center gap-3 pt-2 border-t border-slate-100">
+                        <div class="w-10 h-10 rounded-full bg-amber-100 text-amber-800 font-black flex items-center justify-center">ع</div>
+                        <div>
+                            <span class="font-bold text-slate-900 text-sm block">عبد القادر أدرار</span>
+                            <span class="text-xs text-slate-400">زبين محلي - حي الحطابة</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-3xl border border-slate-200 shadow-sm space-y-4">
+                    <div class="flex items-center gap-1 text-amber-500 text-sm">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-slate-600 text-sm leading-relaxed">"اشتريت من عندهم غرفة نوم كاملة وفرشة طبية، صراحة السعر أنسب بكثير من المحلات المجاورة والأخ صاحب المحل خلوق ومحترم."</p>
+                    <div class="flex items-center gap-3 pt-2 border-t border-slate-100">
+                        <div class="w-10 h-10 rounded-full bg-amber-100 text-amber-800 font-black flex items-center justify-center">م</div>
+                        <div>
+                            <span class="font-bold text-slate-900 text-sm block">محمد لمين</span>
+                            <span class="text-xs text-slate-400">أدرار وسط</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-3xl border border-slate-200 shadow-sm space-y-4">
+                    <div class="flex items-center gap-1 text-amber-500 text-sm">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-slate-600 text-sm leading-relaxed">"خدمة 24/24 حقيقية! اتصلت في وقت متاخر واستقبلوني بكل احترام وحجزت صالون L ممتاز جداً."</p>
+                    <div class="flex items-center gap-3 pt-2 border-t border-slate-100">
+                        <div class="w-10 h-10 rounded-full bg-amber-100 text-amber-800 font-black flex items-center justify-center">ف</div>
+                        <div>
+                            <span class="font-bold text-slate-900 text-sm block">فاطمة الزهراء</span>
+                            <span class="text-xs text-slate-400">أدرار</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Location & Contact Section -->
+    <section id="contact" class="py-16 bg-white border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-5 space-y-6">
+                    <div>
+                        <span class="text-amber-700 font-extrabold text-sm uppercase">موقع المعرض والتواصل</span>
+                        <h2 class="text-3xl font-black text-slate-900 mt-1">تفضل بزيارتنا في حي الحطابة - أدرار</h2>
+                        <p class="text-slate-600 text-sm mt-2">نحن في خدمتكم على مدار 24 ساعة يومياً. يسعدنا استقبالكم ومعاينة أفضل تشكيلات الأثاث بنفسكم!</p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-4 p-4 rounded-2xl bg-slate-50 border border-slate-100">
+                            <div class="w-10 h-10 rounded-xl wood-gradient text-amber-300 flex items-center justify-center text-lg shrink-0">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <span class="font-bold text-slate-900 text-sm block">العنوان والتواجد:</span>
+                                <span class="text-xs text-slate-600">حي الحطابة - ولاية أدرار - الجزائر</span>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 p-4 rounded-2xl bg-slate-50 border border-slate-100">
+                            <div class="w-10 h-10 rounded-xl wood-gradient text-amber-300 flex items-center justify-center text-lg shrink-0">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div>
+                                <span class="font-bold text-slate-900 text-sm block">رقم الهاتف المباشر:</span>
+                                <a href="tel:0673907859" class="text-amber-800 font-black text-sm dir-ltr inline-block hover:underline">0673 90 78 59</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 p-4 rounded-2xl bg-slate-50 border border-slate-100">
+                            <div class="w-10 h-10 rounded-xl wood-gradient text-amber-300 flex items-center justify-center text-lg shrink-0">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div>
+                                <span class="font-bold text-slate-900 text-sm block">واتساب وتواصل سريع:</span>
+                                <a href="https://wa.me/213673907859" target="_blank" class="text-emerald-700 font-bold text-xs hover:underline">اضغط هنا للتحدث عبر الواتساب مباشرة</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form Card -->
+                <div class="lg:col-span-7 bg-slate-50 p-6 sm:p-8 rounded-3xl border border-slate-200 shadow-sm">
+                    <h3 class="text-xl font-bold text-slate-900 mb-4">أرسل لنا استفسارك مباشرة</h3>
+                    <form id="contactForm" onsubmit="handleContactSubmit(event)" class="space-y-4">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 mb-1">اسمك الكريم:</label>
+                                <input type="text" id="custName" required placeholder="مثال: أحمد أدرار" class="w-full p-3.5 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-amber-600 outline-none bg-white">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 mb-1">رقم الهاتف:</label>
+                                <input type="tel" id="custPhone" required placeholder="06XXXXXXXX" class="w-full p-3.5 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-amber-600 outline-none bg-white">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 mb-1">نوع الطلب أو الاستفسار:</label>
+                            <select id="custInterest" class="w-full p-3.5 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-amber-600 outline-none bg-white font-medium">
+                                <option>غرفة نوم مودرن</option>
+                                <option>طقم صالون أو أريكة</option>
+                                <option>فرشة طبية وسرير</option>
+                                <option>باكج العروس المكتمل</option>
+                                <option>استفسار عن التوصيل بحي الحطابة</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 mb-1">تفاصيل الرسالة أو الطلب الخاص:</label>
+                            <textarea id="custMsg" rows="3" placeholder="اكتب الاستفسار أو الأبعاد المطلوبة..." class="w-full p-3.5 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-amber-600 outline-none bg-white"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full gold-gradient text-white font-extrabold py-4 rounded-xl shadow-lg flex items-center justify-center gap-2 hover:opacity-95 transition-all">
+                            <i class="fab fa-whatsapp text-xl"></i>
+                            <span>إرسال الرسالة عبر الواتساب</span>
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Frequently Asked Questions (FAQ) Section -->
+    <section id="faq" class="py-16 bg-slate-50 border-t border-slate-200">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="text-amber-700 font-extrabold text-sm uppercase">إجابات واستفسارات</span>
+                <h2 class="text-3xl font-black text-slate-900 mt-1">الأسئلة الأكثر شيوعاً لدى زبائننا بأدرار</h2>
+                <div class="w-20 h-1 gold-gradient mx-auto mt-3 rounded-full"></div>
+            </div>
+
+            <div class="space-y-4">
+                
+                <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
+                    <button onclick="toggleFaq('faq1')" class="w-full p-5 text-right font-extrabold text-slate-900 flex justify-between items-center hover:bg-amber-50/50 transition-colors">
+                        <span>1. هل توفرون خدمة التوصيل والتركيب للمنازل في أدرار والولايات المجاورة؟</span>
+                        <i id="faq1-icon" class="fas fa-chevron-down text-amber-600 transition-transform"></i>
+                    </button>
+                    <div id="faq1" class="hidden p-5 pt-0 text-slate-600 text-sm leading-relaxed border-t border-slate-100 bg-slate-50/50">
+                        نعم بالتأكيد! نوفر خدمة توصيل آمنة وتركيب متقن لجميع أحياء ولاية أدرار (حي الحطابة، حي 200 مسكن، أدرار وسط المدينة...) بالإضافة للولايات المجاورة مثل تمنراست وتيميمون مع فريق متخصص لحماية الأثاث أثناء النقل.
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
+                    <button onclick="toggleFaq('faq2')" class="w-full p-5 text-right font-extrabold text-slate-900 flex justify-between items-center hover:bg-amber-50/50 transition-colors">
+                        <span>2. ما هي أوقات وساعات فتح المحل في حي الحطابة بأدرار؟</span>
+                        <i id="faq2-icon" class="fas fa-chevron-down text-amber-600 transition-transform"></i>
+                    </button>
+                    <div id="faq2" class="hidden p-5 pt-0 text-slate-600 text-sm leading-relaxed border-t border-slate-100 bg-slate-50/50">
+                        محل الإخوة طورش للأثاث مفتوح **24 ساعة / 24 ساعة (Open 24 Hours)** لخدمتكم واستقبالكم وتلبية طلباتكم في أي وقت يناسبكم طوال أيام الأسبوع.
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
+                    <button onclick="toggleFaq('faq3')" class="w-full p-5 text-right font-extrabold text-slate-900 flex justify-between items-center hover:bg-amber-50/50 transition-colors">
+                        <span>3. ما هي طرق الدفع المتاحة لدى معرض الإخوة طورش؟</span>
+                        <i id="faq3-icon" class="fas fa-chevron-down text-amber-600 transition-transform"></i>
+                    </button>
+                    <div id="faq3" class="hidden p-5 pt-0 text-slate-600 text-sm leading-relaxed border-t border-slate-100 bg-slate-50/50">
+                        نوفر خيارات دفع مريحة تشمل الدفع نقداً عند الاستلام والمعاينة، الدفع عبر تطبيق **بريدي موب BaridiMob**، أو التحويل البنكي المباشر.
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
+                    <button onclick="toggleFaq('faq4')" class="w-full p-5 text-right font-extrabold text-slate-900 flex justify-between items-center hover:bg-amber-50/50 transition-colors">
+                        <span>4. هل الأخشاب والأثاث مقاومة للحرارة والجفاف في الجنوب؟</span>
+                        <i id="faq4-icon" class="fas fa-chevron-down text-amber-600 transition-transform"></i>
+                    </button>
+                    <div id="faq4" class="hidden p-5 pt-0 text-slate-600 text-sm leading-relaxed border-t border-slate-100 bg-slate-50/50">
+                        نعم، نحرص في الإخوة طورش على اختيار أخشاب معالجة خصيصاً وأقمشة ممتازة تتحمل المناخ الصحراوي والحرارة دون أن تتشقق أو يتغير لونها.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-slate-400 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6 border-b border-slate-800 pb-8">
+                
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 wood-gradient rounded-xl flex items-center justify-center text-amber-300 font-bold">
+                        <i class="fas fa-couch"></i>
+                    </div>
+                    <div>
+                        <span class="text-xl font-black text-white block">الإخوة طورش للأثاث</span>
+                        <span class="text-xs text-amber-500 font-bold">حي الحطابة - أدرار - الجزائر</span>
+                    </div>
+                </div>
+
+                <div class="flex flex-wrap justify-center gap-6 text-sm font-semibold">
+                    <a href="#hero" class="hover:text-amber-400 transition-colors">الرئيسية</a>
+                    <a href="#catalog" class="hover:text-amber-400 transition-colors">معرض الأثاث</a>
+                    <a href="#offers" class="hover:text-amber-400 transition-colors">العروض</a>
+                    <a href="#calculator" class="hover:text-amber-400 transition-colors">الحاسبة</a>
+                    <a href="#contact" class="hover:text-amber-400 transition-colors">الموقع والتواصل</a>
+                </div>
+
+                <div class="flex items-center gap-3 text-lg">
+                    <a href="tel:0673907859" class="w-10 h-10 rounded-full bg-slate-900 hover:bg-amber-600 hover:text-white text-slate-300 flex items-center justify-center transition-colors" title="اتصل بـ 0673907859">
+                        <i class="fas fa-phone-alt"></i>
+                    </a>
+                    <a href="https://wa.me/213673907859" target="_blank" class="w-10 h-10 rounded-full bg-slate-900 hover:bg-emerald-600 hover:text-white text-slate-300 flex items-center justify-center transition-colors" title="واتساب">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="pt-8 text-center text-xs text-slate-500 flex flex-col sm:flex-row justify-between items-center gap-4">
+                <p>جميع الحقوق محفوظة © 2026 - **الإخوة طورش للأثاث** (حي الحطابة، أدرار)</p>
+                <p>تصميم عصري جذاب لخدمة وتسهيل تأثيث المنازل في أدرار</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Product Detail Modal -->
+    <div id="productModal" class="fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4 opacity-0 pointer-events-none transition-opacity duration-300">
+        <div class="bg-white rounded-3xl max-w-2xl w-full p-6 relative shadow-2xl transform scale-95 transition-transform duration-300 max-h-[90vh] overflow-y-auto custom-scrollbar" id="modalContainer">
+            <button onclick="closeProductModal()" class="absolute left-4 top-4 text-slate-400 hover:text-slate-800 text-2xl focus:outline-none">
+                <i class="fas fa-times"></i>
+            </button>
+            <div id="modalContent">
+                <!-- Javascript dynamic insertion -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Review Modal -->
+    <div id="reviewModal" class="fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4 opacity-0 pointer-events-none transition-opacity duration-300">
+        <div class="bg-white rounded-3xl max-w-md w-full p-6 relative shadow-2xl">
+            <button onclick="closeReviewModal()" class="absolute left-4 top-4 text-slate-400 hover:text-slate-800 text-xl focus:outline-none">
+                <i class="fas fa-times"></i>
+            </button>
+            <h3 class="text-xl font-bold text-slate-900 mb-4">أضف تقييمك للإخوة طورش للأثاث</h3>
+            <form id="newReviewForm" onsubmit="handleReviewSubmit(event)" class="space-y-4">
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 mb-1">الاسم الكريم:</label>
+                    <input type="text" required id="revAuthor" class="w-full p-3 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-amber-600 outline-none">
+                </div>
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 mb-1">التقييم بالنجوم:</label>
+                    <select id="revStars" class="w-full p-3 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-amber-600 outline-none">
+                        <option value="5">★★★★★ (5/5 ممتاز جداً)</option>
+                        <option value="4">★★★★☆ (4/5 جيد جداً)</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 mb-1">تعليقك وانطباعك:</label>
+                    <textarea id="revComment" required rows="3" class="w-full p-3 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-amber-600 outline-none" placeholder="اكتب رأيك وتجربتك في أدرار..."></textarea>
+                </div>
+                <button type="submit" class="w-full gold-gradient text-white font-bold py-3 rounded-xl shadow text-sm">نشر التقييم</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Toast Notification Popup -->
+    <div id="toast" class="fixed top-6 left-1/2 -translate-x-1/2 z-50 bg-slate-900 text-white px-6 py-3 rounded-2xl shadow-2xl border border-amber-500/30 text-sm font-bold opacity-0 pointer-events-none transition-all duration-300 flex items-center gap-3">
+        <i class="fas fa-check-circle text-amber-400 text-lg"></i>
+        <span id="toastMsg">تمت العملية بنجاح!</span>
+    </div>
+
+    <script>
+        const products = [
+            {
+                id: 1,
+                name: "غرفة نوم ملكية فاخرة - خشب متين",
+                category: "bedrooms",
+                price: "235,000 دج",
+                rawPrice: 235000,
+                badge: "الأكثر طلباً بأدرار",
+                image: "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?q=80&w=800&auto=format&fit=crop",
+                description: "غرفة نوم كاملة تتكون من سرير مزدوج واسع، خزانة ملابس 6 أبواب، تسريحة فاخرة مع مرآة، و2 كومودينو جانبي خشب معالج عالي المتانة."
+            },
+            {
+                id: 2,
+                name: "صالون فاخر 7 مقاعد مودرن",
+                category: "salons",
+                price: "89,000 دج",
+                rawPrice: 89000,
+                badge: "جديد المعرض",
+                image: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?q=80&w=800&auto=format&fit=crop",
+                description: "طقم صالون مريح بأسفنج عالي الكثافة وقماش مخملي ممتاز سهل التنظيف ومناسب للضيوف والعائلات."
+            },
+            {
+                id: 3,
+                name: "فرشة طبية أورثوبيديك لراحة الظهر",
+                category: "mattresses",
+                price: "32,000 دج",
+                rawPrice: 32000,
+                badge: "راحة مضمونة",
+                image: "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?q=80&w=800&auto=format&fit=crop",
+                description: "أفرشة طبية عالية الجودة لتوفير أقصى درجات الراحة أثناء النوم واستقامة العمود الفقري مع ضمان طويل الأمد."
+            },
+            {
+                id: 4,
+                name: "غرفة نوم عصرية بيضاء بسيطة",
+                category: "bedrooms",
+                price: "165,000 دج",
+                rawPrice: 165000,
+                badge: "سعر اقتصادي",
+                image: "https://images.unsplash.com/photo-1540518614846-7eded433c457?q=80&w=800&auto=format&fit=crop",
+                description: "تصميم مودرن هادئ بخزانة سحاب وسرير أنيق يناسب المنازل الحديثة والعرسان."
+            },
+            {
+                id: 5,
+                name: "أريكة زاوية L مريحة وجذابة",
+                category: "salons",
+                price: "45,000 دج",
+                rawPrice: 45000,
+                badge: "عرض خاص",
+                image: "https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?q=80&w=800&auto=format&fit=crop",
+                description: "أريكة مودرن زاوية استغلالية للمساحة توفر راحة تامة وجلسة عائلية ممتازة."
+            },
+            {
+                id: 6,
+                name: "طقم طاولات قهوة وديكور خشبي",
+                category: "tables",
+                price: "15,500 دج",
+                rawPrice: 15500,
+                badge: "إكسسوارات",
+                image: "https://images.unsplash.com/photo-1532323544230-7191fd51bc1b?q=80&w=800&auto=format&fit=crop",
+                description: "طاولات قهوة بتصاميم أنيقة مقاومة للخدش تضفي لمسة فخامة لصالون منزلك."
+            },
+            {
+                id: 7,
+                name: "طاولة طعام 6 كرسي خشب زان",
+                category: "tables",
+                price: "78,000 دج",
+                rawPrice: 78000,
+                badge: "عائلي ممتاز",
+                image: "https://images.unsplash.com/photo-1615066390971-03e4e1c36ddf?q=80&w=800&auto=format&fit=crop",
+                description: "طاولة طعام فاخرة بتشطيب راقي وستة كراسي مبطنة بقماش مخملي مريح."
+            }
+        ];
+
+        let currentCategory = 'all';
+        let selectedColorHex = '#d97706';
+        let selectedColorLabel = 'خشب جوزي مع قماش ذهبي ملكي';
+
+        function toggleFaq(id) {
+            const content = document.getElementById(id);
+            const icon = document.getElementById(id + '-icon');
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                icon.classList.add('rotate-180');
+            } else {
+                content.classList.add('hidden');
+                icon.classList.remove('rotate-180');
+            }
+        }
+
+        function selectCustomColor(hex, label) {
+            selectedColorHex = hex;
+            selectedColorLabel = label;
+            document.getElementById('previewColorBox').style.backgroundColor = hex;
+            document.getElementById('customColorName').textContent = label;
+        }
+
+        function updateCustomizerPreview() {
+            const piece = document.getElementById('customPiece').value;
+            const previewTitle = document.getElementById('previewTitle');
+            const previewIcon = document.getElementById('previewIcon');
+
+            if (piece === 'sofa') {
+                previewTitle.textContent = "طقم صالون عصري L";
+                previewIcon.className = "fas fa-couch text-6xl text-amber-400 mb-4 block";
+            } else if (piece === 'bedroom') {
+                previewTitle.textContent = "غرفة نوم مودرن ملكية";
+                previewIcon.className = "fas fa-bed text-6xl text-amber-400 mb-4 block";
+            } else if (piece === 'chairs') {
+                previewTitle.textContent = "طقم كراسي وطاولة طعام";
+                previewIcon.className = "fas fa-chair text-6xl text-amber-400 mb-4 block";
+            }
+        }
+
+        function sendCustomizerOrder() {
+            const pieceName = document.getElementById('customPiece').selectedOptions[0].text;
+            const msg = `سلام عليكم أثاث الإخوة طورش بأدرار، أود طلب تفصيل واستفسار عن:\n- قطعة الأثاث: ${pieceName}\n- خيار اللون والمادة: ${selectedColorLabel}\nأرجو إفادتي بالتكلفة وتوقيت الجاهزية.`;
+            window.open(`https://wa.me/213673907859?text=${encodeURIComponent(msg)}`, '_blank');
+        }
+
+        function renderProducts(filterCategory = 'all', searchTerm = '') {
+            const grid = document.getElementById('productsGrid');
+            const noRes = document.getElementById('noResults');
+            grid.innerHTML = '';
+
+            const filtered = products.filter(prod => {
+                const matchCategory = filterCategory === 'all' || prod.category === filterCategory;
+                const matchSearch = prod.name.toLowerCase().includes(searchTerm.toLowerCase()) || 
+                                    prod.description.toLowerCase().includes(searchTerm.toLowerCase());
+                return matchCategory && matchSearch;
+            });
+
+            if (filtered.length === 0) {
+                noRes.classList.remove('hidden');
+                return;
+            } else {
+                noRes.classList.add('hidden');
+            }
+
+            filtered.forEach(p => {
+                const card = document.createElement('div');
+                card.className = 'bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm luxury-card flex flex-col justify-between';
+                card.innerHTML = `
+                    <div>
+                        <div class="relative overflow-hidden group">
+                            <img src="${p.image}" alt="${p.name}" class="w-full h-60 object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.onerror=null; this.src='https://placehold.co/600x400/1e293b/d97706?text=%D8%A3%D8%AB%D8%A7%D8%AB+%D8%B7%D9%88%D8%B1%D8%B4';">
+                            <span class="absolute top-3 right-3 bg-slate-900/90 text-amber-400 text-xs font-extrabold px-3 py-1 rounded-full border border-amber-500/30">
+                                ${p.badge}
+                            </span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-black text-slate-900 text-lg mb-2 leading-snug">${p.name}</h3>
+                            <p class="text-slate-600 text-xs leading-relaxed line-clamp-2 mb-4">${p.description}</p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0 border-t border-slate-100 flex items-center justify-between gap-2 mt-auto">
+                        <div>
+                            <span class="text-xs text-slate-400 block">سعر العرض بأدرار:</span>
+                            <span class="text-lg font-black text-amber-800">${p.price}</span>
+                        </div>
+                        <div class="flex gap-2">
+                            <button onclick="openProductModal(${p.id})" class="bg-slate-100 hover:bg-slate-200 text-slate-800 p-2.5 rounded-xl text-xs font-bold transition-colors" title="عرض التفاصيل">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <a href="https://wa.me/213673907859?text=${encodeURIComponent('سلام عليكم أثاث الإخوة طورش بأدرار، أود طلب أو الاستفسار عن القطعة: ' + p.name + ' بسعر ' + p.price)}" target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white px-3.5 py-2.5 rounded-xl text-xs font-extrabold flex items-center gap-1.5 transition-colors shadow">
+                                <i class="fab fa-whatsapp text-sm"></i>
+                                <span>طلب الآن</span>
+                            </a>
+                        </div>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        function openProductModal(id) {
+            const prod = products.find(p => p.id === id);
+            if (!prod) return;
+
+            const modalContent = document.getElementById('modalContent');
+            modalContent.innerHTML = `
+                <div class="grid md:grid-cols-2 gap-6 items-center">
+                    <img src="${prod.image}" alt="${prod.name}" class="rounded-2xl w-full h-64 object-cover border border-slate-200" onerror="this.onerror=null; this.src='https://placehold.co/600x400/1e293b/d97706?text=%D8%A3%D8%AB%D8%A7%D8%AB+%D8%B7%D9%88%D8%B1%D8%B4';">
+                    <div class="space-y-4">
+                        <span class="bg-amber-100 text-amber-900 text-xs font-bold px-3 py-1 rounded-md">${prod.badge}</span>
+                        <h3 class="text-2xl font-black text-slate-900">${prod.name}</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">${prod.description}</p>
+                        <div class="p-4 bg-amber-50 rounded-2xl border border-amber-200">
+                            <span class="text-xs text-amber-800 font-bold block">السعر في المحل بحي الحطابة:</span>
+                            <span class="text-2xl font-black text-amber-800">${prod.price}</span>
+                        </div>
+                        <div class="pt-2 flex flex-col gap-2">
+                            <a href="https://wa.me/213673907859?text=${encodeURIComponent('سلام عليكم أثاث الإخوة طورش، أود تأكيد طلب: ' + prod.name)}" target="_blank" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold py-3.5 rounded-xl text-center flex items-center justify-center gap-2 shadow">
+                                <i class="fab fa-whatsapp text-xl"></i>
+                                <span>طلب مباشر عبر الواتساب</span>
+                            </a>
+                            <a href="tel:0673907859" class="w-full bg-slate-950 hover:bg-slate-900 text-amber-400 font-extrabold py-3.5 rounded-xl text-center flex items-center justify-center gap-2">
+                                <i class="fas fa-phone-alt"></i>
+                                <span>اتصال هاتفي: 0673 90 78 59</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            `;
+
+            const modal = document.getElementById('productModal');
+            const container = document.getElementById('modalContainer');
+            modal.classList.remove('opacity-0', 'pointer-events-none');
+            container.classList.remove('scale-95');
+        }
+
+        function closeProductModal() {
+            const modal = document.getElementById('productModal');
+            const container = document.getElementById('modalContainer');
+            modal.classList.add('opacity-0', 'pointer-events-none');
+            container.classList.add('scale-95');
+        }
+
+        function openReviewModal() {
+            const modal = document.getElementById('reviewModal');
+            modal.classList.remove('opacity-0', 'pointer-events-none');
+        }
+
+        function closeReviewModal() {
+            const modal = document.getElementById('reviewModal');
+            modal.classList.add('opacity-0', 'pointer-events-none');
+        }
+
+        function handleReviewSubmit(e) {
+            e.preventDefault();
+            closeReviewModal();
+            showToast("شكراً جزيلاً! تم إرسال تقييمكم بنجاح.");
+            document.getElementById('newReviewForm').reset();
+        }
+
+        function handleContactSubmit(e) {
+            e.preventDefault();
+            const name = document.getElementById('custName').value;
+            const phone = document.getElementById('custPhone').value;
+            const interest = document.getElementById('custInterest').value;
+            const msg = document.getElementById('custMsg').value;
+
+            const text = `سلام عليكم أثاث الإخوة طورش بأدرار، أنا ${name} (رقم الهاتف: ${phone}).\nأود الاستفسار عن: ${interest}.\nالتفاصيل: ${msg}`;
+            window.open(`https://wa.me/213673907859?text=${encodeURIComponent(text)}`, '_blank');
+            showToast("جاري توجيهك إلى الواتساب لإرسال رسالتك...");
+            document.getElementById('contactForm').reset();
+        }
+
+        function updateCalculator() {
+            const bedroom = parseInt(document.getElementById('calcBedroom').value) || 0;
+            const mattress = parseInt(document.getElementById('calcMattress').value) || 0;
+            const sofa = parseInt(document.getElementById('calcSofa').value) || 0;
+            const table = parseInt(document.getElementById('calcTable').value) || 0;
+            const delivery = document.getElementById('calcDelivery').checked ? 3000 : 0;
+
+            const total = bedroom + mattress + sofa + table + delivery;
+            document.getElementById('calcTotalDisplay').textContent = total.toLocaleString('ar-DZ') + " دج";
+        }
+
+        function sendCalculatedQuote() {
+            const bedroomText = document.getElementById('calcBedroom').selectedOptions[0].text;
+            const mattressText = document.getElementById('calcMattress').selectedOptions[0].text;
+            const sofaText = document.getElementById('calcSofa').selectedOptions[0].text;
+            const total = document.getElementById('calcTotalDisplay').textContent;
+
+            const msg = `سلام عليكم الإخوة طورش للأثاث بأدرار، قمت بحساب قائمة المشتريات من الموقع:\n- غرفة النوم: ${bedroomText}\n- الفرشة الطبية: ${mattressText}\n- الصالون: ${sofaText}\nالمجموع التقديري: ${total}\nأرجو إفادتي بالتخفيض المتاح وتوقيت التوصيل بحي الحطابة/أدرار.`;
+            window.open(`https://wa.me/213673907859?text=${encodeURIComponent(msg)}`, '_blank');
+        }
+
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            document.getElementById('toastMsg').textContent = message;
+            toast.classList.remove('opacity-0', 'pointer-events-none');
+            setTimeout(() => {
+                toast.classList.add('opacity-0', 'pointer-events-none');
+            }, 3500);
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            renderProducts();
+
+            const mobileBtn = document.getElementById('mobileMenuBtn');
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    filterBtns.forEach(b => {
+                        b.classList.remove('bg-amber-700', 'text-white');
+                        b.classList.add('bg-slate-100', 'text-slate-700');
+                    });
+                    e.target.classList.remove('bg-slate-100', 'text-slate-700');
+                    e.target.classList.add('bg-amber-700', 'text-white');
+
+                    currentCategory = e.target.getAttribute('data-category');
+                    renderProducts(currentCategory, document.getElementById('searchInput').value);
+                });
+            });
+
+            document.getElementById('searchInput').addEventListener('input', (e) => {
+                renderProducts(currentCategory, e.target.value);
+            });
+
+            ['calcBedroom', 'calcMattress', 'calcSofa', 'calcTable', 'calcDelivery'].forEach(id => {
+                const el = document.getElementById(id);
+                if (el) {
+                    el.addEventListener('change', updateCalculator);
+                }
+            });
+
+            document.getElementById('productModal').addEventListener('click', (e) => {
+                if (e.target.id === 'productModal') closeProductModal();
+            });
+            document.getElementById('reviewModal').addEventListener('click', (e) => {
+                if (e.target.id === 'reviewModal') closeReviewModal();
+            });
+        });
+    </script>
+</body>
+</html>
